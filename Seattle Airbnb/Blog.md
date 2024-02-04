@@ -37,12 +37,13 @@ Some features has 10%-20% missing values, we will drop or fill missing values ba
 
 # Prepare Data
 
+As we've looked into the data, there's data problems of missing values, 
 To prepare data used to answer the business questions we have on Seattle Airbnb, we need to solve below data problems:
 1. __clean data format__, such as 'price' which is stored as 'object', for analysis purpose we need to transform it to float
 2. __extract date__, date is stored on a daily basis in the calendar.csv and listings.csv, for analysis purposes, it would be useful to extract year and month from the date columns
 3. __missing values__, work on features which have missing values and are useful to check its influence on airbnb prices, three methods are used here: drop missing values; fill missing values with mean value of the column; fill missing value with mode value of the column
 4. __feature engineering__: some features may not be useful on themselves but will be useful while combined with others to create new features, such as number of bathrooms per accomdates will give more information than bathrooms itself.
-5. __drop useless columns__: some columns don't provide any useful infomration on our business questions, such as url, we will drop these columns.
+5. __drop useless features__: some columns don't provide any useful infomration on our business questions, such as url, we will drop these columns.
 
 # Business Questions Answers
 
@@ -69,7 +70,9 @@ __From below sorted bar plot, we can see Broadway has the most listings around 3
 ![image](https://github.com/ZhangZhaoning/Udacity-Data-Scientist-Program/assets/42299684/7b557c57-349c-4746-9040-c2d74daf1397)
 
 
-Now we have answered these business questions, there are definitely much more information and interesting we have touched on in this analysis, such as reviewers coment which would a transciprts analysis, we can pull much more information based on the feedback of customers and track whether a bad review will influence the pirce of airbnb in some cases. But from a brief analysis, we can see there are three main factors influencing the price: __season, neighbourhood, 
+# Conclusion
+
+Now we have answered these business questions, there are definitely much more information and interesting we have touched on in this analysis, such as reviewers coment which would a transciprts analysis, we can pull much more information based on the feedback of customers and track whether a bad review will influence the pirce of airbnb in some cases. But from a brief analysis, we can see there are three main factors influencing the price: __season, neighbourhood, room type__
 
 
 
