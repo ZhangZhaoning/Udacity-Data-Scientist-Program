@@ -1,7 +1,8 @@
 # Introduction
 For this project I decided to analyse the Seatle Airbnb dataset found on Kaggle: https://www.kaggle.com/code/zacksshen/kaggle-seattle-airbnb using the CRISP-DM Process.
 
-![WechatIMG15265.jpg](attachment:WechatIMG15265.jpg)
+![image](https://github.com/ZhangZhaoning/Udacity-Data-Scientist-Program/assets/42299684/6b783d2c-36dd-4787-9633-94c20a7843cd)
+
 
 # Business Understanding
 
@@ -12,15 +13,25 @@ Based on the data available for Seatlle Airbnb, I'm interetsted in below questio
 3. What's the most popular property type and room type and how that influence the price.
 4. How to leverage Machine Learning to predict Price of an Airbnb, what's the most important features.
 
-To answer these questions we will use data from the calendar, reviews and listings.
+# Data Exploration
 
+To answer these questions we need to undserstand the data from the calendar, reviews and listings first. Below is a brief introduction of what these 3 datasets include:
+1. calendar: calendar.csv stores data of airbnb unique id and whether it's available with a price 
+2. reviews: reviewers comments on each house
+3. listings: stores data with airbnb link and details of the house
+
+calendar.csv stores listings price and host id in a time series format, reviews.csv stores the reviewers' comment information, while listings stores the most information on each airbnb which is interesting and will be the main data source for us to dive deep.
+
+Now Let's take a look at what's included in these dataset in a plot format:
 
 From the plot below we can see most of the airbnb price falls between $100 - $200
+
 ![image](https://github.com/ZhangZhaoning/Udacity-Data-Scientist-Program/assets/42299684/15b9a285-cce8-4711-8888-078bd7ab593e)
 
 
 Checking missing values of the features, we can see some features such as square feet has almost 100% missing values, these features will be dropped in the following steps.
 Some features has 10%-20% missing values, we will drop or fill missing values based on its business meanings.
+
 ![image](https://github.com/ZhangZhaoning/Udacity-Data-Scientist-Program/assets/42299684/c58a61ec-efa0-4e85-beb8-f0b496726c85)
 
 
@@ -58,17 +69,8 @@ __From below sorted bar plot, we can see Broadway has the most listings around 3
 ![image](https://github.com/ZhangZhaoning/Udacity-Data-Scientist-Program/assets/42299684/7b557c57-349c-4746-9040-c2d74daf1397)
 
 
+Now we have answered these business questions, there are definitely much more information and interesting we have touched on in this analysis, such as reviewers coment which would a transciprts analysis, we can pull much more information based on the feedback of customers and track whether a bad review will influence the pirce of airbnb in some cases. But from a brief analysis, we can see there are three main factors influencing the price: __season, neighbourhood, 
 
-# Data Modeling
-To build a model predicting the prices, we will test couple of models:
-1. linear regression
-2. random forest regressor
-3. xgboost
-
-- We will apply grid search and cross validation to select the best paramteres for Random Forest and Xgboost model. 
-- Before we set up the model, we need to handle the categorialc features by creating dummy variables for them.
-
-# Evaluate the results
 
 
 
