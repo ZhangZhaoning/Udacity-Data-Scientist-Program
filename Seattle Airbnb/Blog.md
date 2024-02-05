@@ -13,7 +13,7 @@ Based on the data available for Seatlle Airbnb, I'm interetsted in below questio
 For this project I decided to analyse the Seatle Airbnb dataset found on Kaggle: https://www.kaggle.com/code/zacksshen/kaggle-seattle-airbnb using the CRISP-DM Process of:
 
 1. Business Understanding
-2.Data Understanding
+2. Data Understanding
 3. Prepare Data
 4. Data Modeling
 5. Evaluate the Results
