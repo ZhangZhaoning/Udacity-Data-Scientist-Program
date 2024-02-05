@@ -63,19 +63,18 @@ __From below sorted bar plot, we can see Broadway has the most listings around 3
 
 ![image](https://github.com/ZhangZhaoning/Udacity-Data-Scientist-Program/assets/42299684/7b557c57-349c-4746-9040-c2d74daf1397)
 
+# Deployment
+
+I have used Jupyter Notebook to deploy my code. You may also use Google collab to run the code. The code libraries used and detailed code breakdown is available at GitHub and is explained in the Readme.
 
 # Conclusion
 
 Now we have explored these business questions, there are definitely much more information and interesting topics we have not touched on in this analysis, such as reviewers coment which would use a text mining analysis, we can learn much more information based on the feedback of customers and track whether a bad review will influence the pirce of airbnb in some cases. But from a brief analysis, we can see there are three main factors influencing the price: __season, neighbourhood, room type__
 
-Deployment
-I have used Google collab to deploy my code. You may also use Jupyter Notebooks to run the code. The code libraries used and detailed code breakdown is available at GitHub and is explained in the Readme.
 
-This is the GitHub Link: https://github.com/AkshayJaitly/Boston-AirBnb-Analysis.
+# What’s next:
 
-What’s next:
-
-Use predictive analytics to determine prices in the future. Determine seasonal effects on pricing. Understand more about Superhosts and what makes them special.
+Use predictive analytics to predict prices in the future. Determine seasonal effects on pricing. Understand more about Superhosts and what makes them special.
 
 Feel free to follow me on GitHub.
 
