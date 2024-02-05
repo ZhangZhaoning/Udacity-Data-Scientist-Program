@@ -18,7 +18,7 @@ For this project I decided to analyse the Seatle Airbnb dataset found on Kaggle:
 4. Data Modeling
 5. Evaluate the Results
 
-# Data Exploration
+## Data Exploration
 
 To answer these questions we need to undserstand the data from the calendar, reviews and listings first. Below is a brief introduction of what these 3 datasets include:
 1. calendar: calendar.csv stores data of airbnb unique id and whether it's available with a price 
@@ -63,16 +63,16 @@ __From below sorted bar plot, we can see Broadway has the most listings around 3
 
 ![image](https://github.com/ZhangZhaoning/Udacity-Data-Scientist-Program/assets/42299684/7b557c57-349c-4746-9040-c2d74daf1397)
 
-# Deployment
+## Deployment
 
 I have used Jupyter Notebook to deploy my code. You may also use Google collab to run the code. The code libraries used and detailed code breakdown is available at GitHub and is explained in the Readme.
 
-# Conclusion
+## Conclusion
 
 Now we have explored these business questions, there are definitely much more information and interesting topics we have not touched on in this analysis, such as reviewers coment which would use a text mining analysis, we can learn much more information based on the feedback of customers and track whether a bad review will influence the pirce of airbnb in some cases. But from a brief analysis, we can see there are three main factors influencing the price: __season, neighbourhood, room type__
 
 
-# What’s next:
+## What’s next:
 
 Use predictive analytics to predict prices in the future. Determine seasonal effects on pricing. Understand more about Superhosts and what makes them special.
 
