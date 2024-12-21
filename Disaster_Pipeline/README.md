@@ -9,7 +9,7 @@ This project is part of the Udacity Data Science Nanodegree program and focuses 
 	•	A machine learning pipeline for training a multi-output classifier to predict multiple categories for each message.
 	•	A Flask web application where users can input a disaster message and get classification results, along with visualizations of the data.
 
- File Structure:
+## File Structure:
 - app
 | - template
 | |- master.html  # main page of web app
