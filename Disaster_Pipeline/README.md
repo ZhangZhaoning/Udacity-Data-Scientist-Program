@@ -10,23 +10,25 @@ This project is part of the Udacity Data Science Nanodegree program and focuses 
 	•	A Flask web application where users can input a disaster message and get classification results, along with visualizations of the data.
 
 ## File Structure:
+
 - app
-| - template
-| |- master.html  # main page of web app
-| |- go.html  # classification result page of web app
-|- run.py  # Flask file that runs app
+	- template
+	- master.html  # main page of web app
+	- go.html  # classification result page of web app
+	- run.py  # Flask file that runs app
 
 - data
-|- disaster_categories.csv  # data to process 
-|- disaster_messages.csv  # data to process
-|- process_data.py
-|- InsertDatabaseName.db   # database to save clean data to
+	- disaster_categories.csv  # data to process
+	- disaster_messages.csv  # data to process
+	- process_data.py
+	- InsertDatabaseName.db   # database to save clean data to
 
 - models
-|- train_classifier.py
-|- classifier.pkl  # saved model 
+	- train_classifier.py
+	- classifier.pkl  # saved model 
 
 - README.md
+
 
 ## Key Features
 	1.	ETL Pipeline:
@@ -40,6 +42,7 @@ This project is part of the Udacity Data Science Nanodegree program and focuses 
 	3.	Flask Web Application:
 	•	Provides an interface for users to input messages and view classification results.
 	•	Displays data visualizations for better insights into disaster messaging patterns.
+ ![image](https://github.com/user-attachments/assets/caac69bc-f1e8-4817-a662-71b18d1caf5e)
 
  ![image](https://github.com/user-attachments/assets/44ad8fba-73af-47d5-855c-e8cfc1268e1a)
 
