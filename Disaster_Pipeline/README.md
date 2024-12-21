@@ -1,49 +1,14 @@
 # Disaster Response Pipeline Project
 
-## Project Overview
+### Instructions:
+1. Run the following commands in the project's root directory to set up your database and model.
 
-This project is part of the Udacity Data Science Nanodegree program and focuses on building a machine learning pipeline to categorize disaster-related messages. The goal is to assist disaster response agencies in directing messages to the appropriate departments quickly and effectively.
+    - To run ETL pipeline that cleans data and stores in database
+        `python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db`
+    - To run ML pipeline that trains classifier and saves
+        `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`
 
-## The project includes:
-	•	An ETL pipeline for cleaning and preparing the data.
-	•	A machine learning pipeline for training a multi-output classifier to predict multiple categories for each message.
-	•	A Flask web application where users can input a disaster message and get classification results, along with visualizations of the data.
+2. Run the following command in the app's directory to run your web app.
+    `python run.py`
 
-## File Structure:
-
-- app
-	- template
-	- master.html  # main page of web app
-	- go.html  # classification result page of web app
-	- run.py  # Flask file that runs app
-
-- data
-	- disaster_categories.csv  # data to process
-	- disaster_messages.csv  # data to process
-	- process_data.py
-	- InsertDatabaseName.db   # database to save clean data to
-
-- models
-	- train_classifier.py
-	- classifier.pkl  # saved model 
-
-- README.md
-
-
-## Key Features
-	1.	ETL Pipeline:
-	•	Extracts data from raw datasets (messages.csv and categories.csv).
-	•	Cleans and transforms the data.
-	•	Stores the processed data in an SQLite database for easy access.
-	2.	Machine Learning Pipeline:
-	•	Tokenizes and processes text messages.
-	•	Trains a multi-output classifier to predict 36 disaster-related categories.
-	•	Tunes hyperparameters using GridSearchCV for optimal performance.
-	3.	Flask Web Application:
-	•	Provides an interface for users to input messages and view classification results.
-	•	Displays data visualizations for better insights into disaster messaging patterns.
- ![image](https://github.com/user-attachments/assets/caac69bc-f1e8-4817-a662-71b18d1caf5e)
-
- ![image](https://github.com/user-attachments/assets/44ad8fba-73af-47d5-855c-e8cfc1268e1a)
-
-
+3. Go to http://0.0.0.0:3001/
