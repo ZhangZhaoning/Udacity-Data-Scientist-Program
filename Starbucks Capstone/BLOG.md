@@ -146,10 +146,10 @@ To ensure reliable results:
 
 ### Model Evaluation and Expected Outcomes
 
--The models used for predicting offer interactions and completions include decision trees and random forests, chosen for their interpretability and robustness. Here’s how the results were evaluated:
--- 1.	Precision and Recall: High precision indicates the model correctly identifies users likely to engage with offers, while recall ensures a wide coverage of potential responders.
--- 2.	F1 Score: A balance between precision and recall, providing a holistic view of model performance.
--- 3.	Accuracy: Measures the overall correctness of the model but can be biased due to imbalanced data.
+- The models used for predicting offer interactions and completions include decision trees and random forests, chosen for their interpretability and robustness. Here’s how the results were evaluated:
+1.	Precision and Recall: High precision indicates the model correctly identifies users likely to engage with offers, while recall ensures a wide coverage of potential responders./
+2.	F1 Score: A balance between precision and recall, providing a holistic view of model performance./
+3.	Accuracy: Measures the overall correctness of the model but can be biased due to imbalanced data./
 
 ### Evaluation
 - The result is showing incredibly high accuracy to both training and test dataset, with membership years to be the most important features
