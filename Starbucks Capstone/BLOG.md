@@ -9,7 +9,7 @@ This blog delves into the step-by-step methodology, findings, and insights deriv
 
 ---
 
-## Section 1: Project Definition
+## Project Definition
 
 ### Project Overview
 
@@ -31,14 +31,14 @@ The project's primary objective is to identify patterns in user behavior and eva
 
 To measure success, the following metrics are used:
 1. **Offer Completion Rate:** The percentage of users who complete an offer after receiving it.
-2. **Response Rate:** The percentage of users who view an offer and subsequently complete it.
-3. **Revenue Impact:** The increase in transaction amounts attributed to offer views or completions.
+2. **Offer View Rate:** The percentage of users who view an offer.
+
 
 These metrics provide a robust framework to evaluate user interactions and assess offer effectiveness.
 
 ---
 
-## Section 2: Analysis
+## Exploratary Data Analysis
 
 ### Data Exploration
 
@@ -52,17 +52,65 @@ Initial exploration revealed key insights:
 - **Gender Distribution:** There are significantly more males than females in the dataset.
 - **Income Distribution:** Users are predominantly in the middle-income bracket, with peaks around $60,000 to $80,000.
 - **Membership Trends:** The majority of users joined the rewards program in 2016–2017.
+- <img width="1001" alt="image" src="https://github.com/user-attachments/assets/83bb8f77-e6c6-4c87-80d7-510ad2eaca55" />
+
 
 ### Data Visualization
 
 The visualizations provided clarity on:
 - **Offer Popularity:** Which offer types (BOGO, Discount, or Informational) are most frequently completed.
-- **Demographic Trends:** Age groups and income levels that are most active on the app.
+- <img width="673" alt="image" src="https://github.com/user-attachments/assets/8ec081be-ee7c-4b62-a531-d4555e2e6075" />
+- 
 - **Time Series Analysis:** Patterns in user activity and offer completions over time.
+- <img width="934" alt="image" src="https://github.com/user-attachments/assets/7ac92c3c-bb17-4855-8ca5-32c868eea28f" />
+- <img width="898" alt="image" src="https://github.com/user-attachments/assets/ac6c3d11-d2b5-41ca-9e39-d3c5d646794e" />
+
 
 ---
 
-## Section 3: Methodology
+## Deep Analysis and Startegy Summary
+
+### Insights and Evaluation
+
+**Offer Type Effectiveness:**
+- **BOGO Offers:** Most popular and effective among young adults (ages 18–30) with higher incomes ($70,000–$120,000).
+- <img width="885" alt="image" src="https://github.com/user-attachments/assets/d22bc6b0-7c20-4ea9-9cb1-f48b33f11e99" />
+- <img width="883" alt="image" src="https://github.com/user-attachments/assets/7a53ee43-9c19-408c-acd2-7539da201c4b" />
+
+- **Discount Offers:** Appealing to middle-aged adults (ages 31–60) across all income levels, particularly those managing household budgets.
+- <img width="893" alt="image" src="https://github.com/user-attachments/assets/ef9c023c-b2d0-4853-8839-c9357cbdf487" />
+- <img width="886" alt="image" src="https://github.com/user-attachments/assets/47e26ccb-9098-43b6-8b8b-4e6e03d2a3bf" />
+
+- **Informational Offers:** Engages older adults (ages 61–100), providing value without the immediate pressure of purchase completion.
+
+**Demographic Trends:**
+- **Age:** Completion rates improve after age 35, making this group a priority for targeted campaigns.
+- <img width="650" alt="image" src="https://github.com/user-attachments/assets/e2ebfa16-37e0-4919-b588-75dab728b998" />
+
+- **Gender:** Females are more likely to complete offers than males, despite similar view rates.
+- <img width="637" alt="image" src="https://github.com/user-attachments/assets/65131052-a668-4a63-9a9e-6275907bc4d7" />
+
+- **Income:** Engagement peaks in the middle-income range ($50,000–$90,000), while higher-income users demonstrate better completion rates.
+- <img width="646" alt="image" src="https://github.com/user-attachments/assets/b5d7bb6e-9f82-45d0-a89c-4f8fb753948b" />
+
+### Correlation Analysis
+
+- **Transactions:** Positively correlated with offer completions, suggesting active app users are more engaged.
+- **Membership Tenure:** Slightly correlated with offer engagement, as long-term members show more consistent interaction.
+- **Income:** Shows a minor correlation with completion rates, aligning with higher affordability.
+- <img width="716" alt="image" src="https://github.com/user-attachments/assets/f658b8ca-c0f3-4961-9117-d27a7d32451a" />
+
+
+### Summary of Findings
+
+- **BOGO Offers for Higher-Income Young Adults:** Target individuals aged 18–30 with incomes between $70,000–$120,000.
+- **Discount Offers for Middle-Aged Adults:** Focus on individuals aged 31–60 across all income levels.
+- **Informational Offers for Older Adults:** Engage individuals aged 61–100, emphasizing awareness and education.
+
+
+---
+
+## Machine Learning Modeling
 
 ### Data Preprocessing
 
@@ -74,7 +122,7 @@ Steps taken include:
 ### Implementation
 
 Data integration was performed to merge the datasets, creating a unified dataset for analysis. The methodology included:
-- Filtering irrelevant events (e.g., transactions not tied to offers).
+- Filtering irrelevant events.
 - Linking offers to user demographics.
 - Aggregating user activity to analyze behavior trends.
 
@@ -83,36 +131,6 @@ Data integration was performed to merge the datasets, creating a unified dataset
 To ensure reliable results:
 - Cross-validation was used for robustness.
 - Hyperparameters were optimized for machine learning models.
-- Feature scaling improved predictive accuracy.
-
----
-
-## Section 4: Results
-
-### Insights and Evaluation
-
-**Offer Type Effectiveness:**
-- **BOGO Offers:** Most popular and effective among young adults (ages 18–30) with higher incomes ($70,000–$120,000).
-- **Discount Offers:** Appealing to middle-aged adults (ages 31–60) across all income levels, particularly those managing household budgets.
-- **Informational Offers:** Engages older adults (ages 61–100), providing value without the immediate pressure of purchase completion.
-
-**Demographic Trends:**
-- **Age:** Completion rates improve after age 35, making this group a priority for targeted campaigns.
-- **Gender:** Females are more likely to complete offers than males, despite similar view rates.
-- **Income:** Engagement peaks in the middle-income range ($50,000–$90,000), while higher-income users demonstrate better completion rates.
-
-### Correlation Analysis
-
-- **Transactions:** Positively correlated with offer completions, suggesting active app users are more engaged.
-- **Membership Tenure:** Slightly correlated with offer engagement, as long-term members show more consistent interaction.
-- **Income:** Shows a minor correlation with completion rates, aligning with higher affordability.
-
-### Summary of Findings
-
-- **BOGO Offers for Higher-Income Young Adults:** Target individuals aged 18–30 with incomes between $70,000–$120,000.
-- **Discount Offers for Middle-Aged Adults:** Focus on individuals aged 31–60 across all income levels.
-- **Informational Offers for Older Adults:** Engage individuals aged 61–100, emphasizing awareness and education.
-
 ---
 
 ## Section 5: Conclusion
