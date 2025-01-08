@@ -61,7 +61,8 @@ Initial exploration revealed key insights:
 The visualizations provided clarity on:
 - **Offer Popularity:** Which offer types (BOGO, Discount, or Informational) are most frequently completed.
 - <img width="673" alt="image" src="https://github.com/user-attachments/assets/8ec081be-ee7c-4b62-a531-d4555e2e6075" />
-- 
+
+
 - **Time Series Analysis:** Patterns in user activity and offer completions over time.
 - <img width="934" alt="image" src="https://github.com/user-attachments/assets/7ac92c3c-bb17-4855-8ca5-32c868eea28f" />
 - <img width="898" alt="image" src="https://github.com/user-attachments/assets/ac6c3d11-d2b5-41ca-9e39-d3c5d646794e" />
@@ -107,11 +108,11 @@ The visualizations provided clarity on:
 - **BOGO Offers for Higher-Income Young Adults:**
 - Target Group: Individuals in the age group of 18-30, particularly those with incomes in the higher brackets (70k-120k).
 - Rationale: This demographic shows a rising trend in both BOGO offer view and completion rates as income increases. Young adults with higher disposable incomes may be more incentivized to take advantage of BOGO offers.arget individuals aged 18–30 with incomes between $70,000–$120,000.
-- 
+  
 - **Discount Offers for Middle-Aged Adults:** 
 - Target Group: Individuals within the age groups of 31-60, across all income brackets.
 - Rationale: Consistently high completion rates for discount offers in these age groups suggest that middle-aged adults, who might be managing household budgets, find direct discounts more appealing and actionable.
-- 
+  
 - **Informational Offers for Older Adults:** 
 - Target Group: Individuals in the age group of 61-100.
 - Rationale: Older adults show a gradual increase in engagement with informational offers, particularly as they move into higher age brackets. Informational content may be valuable for this demographic, providing insights or awareness about products which can lead to informed purchasing decisions without the immediate pressure of completing a sale.
