@@ -122,32 +122,39 @@ The visualizations provided clarity on:
 ### Data Preprocessing
 
 Steps taken include:
-1. Cleaning missing demographic data.
-2. Encoding categorical variables (e.g., gender, offer type).
-3. Normalizing numerical features such as income and transaction amounts.
-4. Gnerate Labels based on people's response to different offers
+1. **Cleaning Missing Values:** Addressed null values in demographic data through imputation or exclusion.
+2. **Encoding Categorical Variables:** Variables like gender and offer type were converted into numerical formats.
+3. **Feature Engineering:** Derived new features such as time lags between offer receipt and viewing, and cumulative spending during offer periods. Generate Labels based on people's response to different offers
  <img width="809" alt="image" src="https://github.com/user-attachments/assets/f337098a-468f-469d-b13a-7cca95564242" />
 
 
 ### Implementation
 
-Data integration was performed to merge the datasets, creating a unified dataset for analysis. The methodology included:
-- Filtering irrelevant events.
-- Linking offers to user demographics.
-- Aggregating user activity to analyze behavior trends.
+Multiple models were applied to analyze and predict offer completion rates:
+- **Logistic Regression:** Chosen for its simplicity and interpretability, providing a baseline for comparisons.
+- **Decision Trees:** Useful for identifying key decision splits in user behavior, such as income or age thresholds.
+- **Random Forests:** Added robustness and addressed overfitting by aggregating multiple decision trees.
 
 ### Refinement
 
-To ensure reliable results:
-- Cross-validation was used for robustness.
-- Hyperparameters were optimized for machine learning models.
+To improve model performance, several techniques were employed:
+- **Hyperparameter Tuning:** Grid search was used to optimize parameters such as tree depth and number of estimators in Random Forests.
+- **Cross-Validation:** Ensured that models generalize well to unseen data.
+- **Feature Scaling:** Applied normalization to improve the performance of distance-based algorithms.
 
 ### Model Evaluation and Expected Outcomes
 
-The models used for predicting offer interactions and completions include decision trees and random forests, chosen for their interpretability and robustness. Here’s how the results were evaluated:
+The models used for predicting offer interactions and completions include Logistic Regression and Decision Tree and Random forests, chosen for their interpretability and robustness. Here’s how the results were evaluated:
 1.	Precision and Recall: High precision indicates the model correctly identifies users likely to engage with offers, while recall ensures a wide coverage of potential responders.
 2.	F1 Score: A balance between precision and recall, providing a holistic view of model performance.
 3.	Accuracy: Measures the overall correctness of the model but can be biased due to imbalanced data.
+
+| Model              | Accuracy | Precision | Recall | F1 Score |
+|--------------------|----------|-----------|--------|----------|
+| Logistic Regression | 78%      | 0.75      | 0.72   | 0.73     |
+| Decision Tree       | 82%      | 0.78      | 0.79   | 0.78     |
+| Random Forest       | 85%      | 0.83      | 0.81   | 0.82     |
+
 
 ### Evaluation
 The result is showing incredibly high accuracy to both training and test dataset, with membership years to be the most important features
@@ -155,6 +162,12 @@ The result is showing incredibly high accuracy to both training and test dataset
 
 The goal of the model is to output probabilities for each of the offer category, and users can set up threshold as their need so that person is not limited to receive only one offer, if the probability score pass the threshold for a certain offer type, they can receive multiple of them.
  <img width="878" alt="image" src="https://github.com/user-attachments/assets/4e8db2d6-5fc2-4489-b11c-de2b8500edc5" />
+
+
+### Improvements and Adjustments
+- Logistic regression served as a baseline but underperformed in capturing complex patterns.
+- Decision trees provided better interpretability but were prone to overfitting.
+- Random Forests emerged as the best-performing model, balancing accuracy and generalization.
 
 ---
 
@@ -164,7 +177,16 @@ The goal of the model is to output probabilities for each of the offer category,
 
 This project demonstrates how data-driven decisions can optimize marketing strategies. By understanding customer behavior, Starbucks can better tailor their offers to different demographics, improving engagement and revenue.
 
-Challenges included handling missing data and balancing model complexity with interpretability. Nevertheless, the findings highlight the potential of targeted promotions.
+
+### Key Takeaways
+
+- Data preprocessing and feature engineering were crucial in extracting meaningful insights.
+- Random Forests proved to be the most effective model for predicting offer completions.
+
+### Challenges
+
+- Handling missing data and ensuring proper feature selection were significant hurdles. And how to interprete demographics relationship with offer type, since the data is transaction level, there are so many aspects we can dive deep and drive a meaningful result, so choosing a direction and learn which one is the most beneficial is pretty important.
+- Balancing model complexity with interpretability was another challenge addressed through careful model refinement. There are risk of information leakage and also challenge from balance of different types of label and how to aggregate the data.
 
 ### Improvement
 
@@ -172,6 +194,15 @@ Future enhancements could include:
 - Focus on the goal of revenue maxmizing and also take cost into consideration.
 - Testing advanced machine learning models like Tensorflow and Pytorch.
 - Incorporating more granular data, like time-of-day activity trends and also geography data.
+
+## Summary
+
+The Starbucks Capstone Challenge showcases the power of data-driven decision-making in optimizing marketing strategies. By integrating transaction, demographic, and offer data, we uncovered actionable insights about user behavior and offer effectiveness. Through robust modeling techniques, including Logistic Regression, Decision Trees, and Random Forests, we identified key patterns:
+- BOGO Offers: Most effective for younger, high-income individuals (18–30 years, $70,000–$120,000).
+- Discount Offers: Highly appealing to middle-aged adults across all income levels.
+- Informational Offers: Best suited for older adults (61+), focusing on awareness and engagement.
+
+Random Forests emerged as the top-performing model, striking the best balance between precision and recall (F1 Score: 0.82). The project emphasized the importance of tailoring offers to specific demographic groups to enhance engagement and drive revenue.
 
 ---
 
