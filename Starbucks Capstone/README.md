@@ -21,9 +21,21 @@ A RandomForestClassifier was employed to predict the most suitable offer type ba
 ## Usage
 - Explore the analysis and modeling through the Jupyter notebooks included in the repo.
 - The notebook can be utilized to experiment with model training, parameter tuning, and performance evaluation.
+- 
+## Dependencies
+This project requires the following libraries:
+- NumPy
+- Pandas
+- Matplotlib
+- Seaborn
+- Scikit-Learn
+- Jupyter Notebook
 
-## Contributing
-Feel free to contribute to this project! Fork the repository, make your changes, and submit a pull request.
+## Known Bugs
+No known bugs at this time. However, if you encounter any issues, please report them in the issues section of the repository.
+
+## Author
+Zhaoning Zhang
 
 ## Acknowledgments
 - Data provided by Udacity, based on a simulation of the Starbucks app.
