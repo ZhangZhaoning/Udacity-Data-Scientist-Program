@@ -20,7 +20,7 @@ A RandomForestClassifier was employed to predict the most suitable offer type ba
 
 ## Usage
 - Explore the analysis and modeling through the Jupyter notebooks included in the repo.
-- The `model.ipynb` notebook can be utilized to experiment with model training, parameter tuning, and performance evaluation.
+- The notebook can be utilized to experiment with model training, parameter tuning, and performance evaluation.
 
 ## Contributing
 Feel free to contribute to this project! Fork the repository, make your changes, and submit a pull request.
