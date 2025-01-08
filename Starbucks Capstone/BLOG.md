@@ -35,8 +35,6 @@ To measure success, the following metrics are used:
 2. **Offer View Rate:** The percentage of users who view an offer.
 
 
-These metrics provide a robust framework to evaluate user interactions and assess offer effectiveness.
-
 ---
 
 ## Exploratary Data Analysis
