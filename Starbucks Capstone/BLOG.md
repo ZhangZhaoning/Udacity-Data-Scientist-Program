@@ -1,4 +1,4 @@
-- <img width="207" alt="image" src="https://github.com/user-attachments/assets/9c87c0d7-df7b-449a-9f3e-4f20a4392f90" />
+<img width="1001" alt="image" src="https://github.com/user-attachments/assets/9c87c0d7-df7b-449a-9f3e-4f20a4392f90" />
 
 # Optimizing Marketing Strategies with Data: The Starbucks Capstone Challenge
 
