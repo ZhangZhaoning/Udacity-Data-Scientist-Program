@@ -1,3 +1,4 @@
+- <img width="207" alt="image" src="https://github.com/user-attachments/assets/9c87c0d7-df7b-449a-9f3e-4f20a4392f90" />
 
 # Optimizing Marketing Strategies with Data: The Starbucks Capstone Challenge
 
@@ -101,12 +102,19 @@ The visualizations provided clarity on:
 - <img width="716" alt="image" src="https://github.com/user-attachments/assets/f658b8ca-c0f3-4961-9117-d27a7d32451a" />
 
 
-### Summary of Findings
+## Summary of Findings
 
-- **BOGO Offers for Higher-Income Young Adults:** Target individuals aged 18–30 with incomes between $70,000–$120,000.
-- **Discount Offers for Middle-Aged Adults:** Focus on individuals aged 31–60 across all income levels.
-- **Informational Offers for Older Adults:** Engage individuals aged 61–100, emphasizing awareness and education.
-
+- **BOGO Offers for Higher-Income Young Adults:**
+- Target Group: Individuals in the age group of 18-30, particularly those with incomes in the higher brackets (70k-120k).
+- Rationale: This demographic shows a rising trend in both BOGO offer view and completion rates as income increases. Young adults with higher disposable incomes may be more incentivized to take advantage of BOGO offers.arget individuals aged 18–30 with incomes between $70,000–$120,000.
+- 
+- **Discount Offers for Middle-Aged Adults:** 
+- Target Group: Individuals within the age groups of 31-60, across all income brackets.
+- Rationale: Consistently high completion rates for discount offers in these age groups suggest that middle-aged adults, who might be managing household budgets, find direct discounts more appealing and actionable.
+- 
+- **Informational Offers for Older Adults:** 
+- Target Group: Individuals in the age group of 61-100.
+- Rationale: Older adults show a gradual increase in engagement with informational offers, particularly as they move into higher age brackets. Informational content may be valuable for this demographic, providing insights or awareness about products which can lead to informed purchasing decisions without the immediate pressure of completing a sale.
 
 ---
 
@@ -118,6 +126,9 @@ Steps taken include:
 1. Cleaning missing demographic data.
 2. Encoding categorical variables (e.g., gender, offer type).
 3. Normalizing numerical features such as income and transaction amounts.
+4. Gnerate Labels based on people's response to different offers
+- <img width="809" alt="image" src="https://github.com/user-attachments/assets/f337098a-468f-469d-b13a-7cca95564242" />
+
 
 ### Implementation
 
@@ -131,9 +142,24 @@ Data integration was performed to merge the datasets, creating a unified dataset
 To ensure reliable results:
 - Cross-validation was used for robustness.
 - Hyperparameters were optimized for machine learning models.
+
+### Model Evaluation and Expected Outcomes
+
+-The models used for predicting offer interactions and completions include decision trees and random forests, chosen for their interpretability and robustness. Here’s how the results were evaluated:
+-- 1.	Precision and Recall: High precision indicates the model correctly identifies users likely to engage with offers, while recall ensures a wide coverage of potential responders.
+-- 2.	F1 Score: A balance between precision and recall, providing a holistic view of model performance.
+-- 3.	Accuracy: Measures the overall correctness of the model but can be biased due to imbalanced data.
+
+### Evaluation
+- The result is showing incredibly high accuracy to both training and test dataset, with membership years to be the most important features
+- <img width="508" alt="image" src="https://github.com/user-attachments/assets/e08a4082-9e7d-47fd-9ccf-2898f4c8d84b" />
+
+- The goal of the model is to output probabilities for each of the offer category, and users can set up threshold as their need so that person is not limited to receive only one offer, if the probability score pass the threshold for a certain offer type, they can receive multiple of them.
+- <img width="878" alt="image" src="https://github.com/user-attachments/assets/4e8db2d6-5fc2-4489-b11c-de2b8500edc5" />
+
 ---
 
-## Section 5: Conclusion
+## Conclusion
 
 ### Reflection
 
@@ -144,9 +170,9 @@ Challenges included handling missing data and balancing model complexity with in
 ### Improvement
 
 Future enhancements could include:
-- Using real-world datasets for validation.
-- Testing advanced machine learning models.
-- Incorporating more granular data, like time-of-day activity trends.
+- Focus on the goal of revenue maxmizing and also take cost into consideration.
+- Testing advanced machine learning models like Tensorflow and Pytorch.
+- Incorporating more granular data, like time-of-day activity trends and also geography data.
 
 ---
 
