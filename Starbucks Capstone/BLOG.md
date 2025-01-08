@@ -152,10 +152,10 @@ The models used for predicting offer interactions and completions include decisi
 3.	Accuracy: Measures the overall correctness of the model but can be biased due to imbalanced data.
 
 ### Evaluation
-- The result is showing incredibly high accuracy to both training and test dataset, with membership years to be the most important features
+The result is showing incredibly high accuracy to both training and test dataset, with membership years to be the most important features
  <img width="508" alt="image" src="https://github.com/user-attachments/assets/e08a4082-9e7d-47fd-9ccf-2898f4c8d84b" />
 
-- The goal of the model is to output probabilities for each of the offer category, and users can set up threshold as their need so that person is not limited to receive only one offer, if the probability score pass the threshold for a certain offer type, they can receive multiple of them.
+The goal of the model is to output probabilities for each of the offer category, and users can set up threshold as their need so that person is not limited to receive only one offer, if the probability score pass the threshold for a certain offer type, they can receive multiple of them.
  <img width="878" alt="image" src="https://github.com/user-attachments/assets/4e8db2d6-5fc2-4489-b11c-de2b8500edc5" />
 
 ---
